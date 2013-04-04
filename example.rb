@@ -6,6 +6,10 @@ class NssStudent
     @job = job
     @experience = experience
   end
+
+  def learn_a_lot
+    "give me knowledge!!!"
+  end
 end
 
 class JrDev
@@ -16,6 +20,10 @@ class JrDev
     @job = job
     @experience = experience
   end
+
+  def bumble_about
+    "what was that thing I learned at NSS?"
+  end
 end
 
 class AccomplishedProfessional
@@ -25,5 +33,9 @@ class AccomplishedProfessional
     @name = name
     @job = job
     @experience = experience
+  end
+
+  def make_the_big_bucks
+    "mucho " * @experience + "dinero"
   end
 end
