@@ -7,6 +7,10 @@ class NssStudent
     @experience = experience
   end
 
+  def bang_out_code
+    "stack overflow copy and paste"
+  end
+
   def learn_a_lot
     "give me knowledge!!!"
   end
@@ -21,6 +25,10 @@ class JrDev
     @experience = experience
   end
 
+  def bang_out_code
+    "ask somebody, then stack overflow copy and paste"
+  end
+
   def bumble_about
     "what was that thing I learned at NSS?"
   end
@@ -33,6 +41,10 @@ class AccomplishedProfessional
     @name = name
     @job = job
     @experience = experience
+  end
+
+  def bang_out_code
+    "make miracles happen"
   end
 
   def make_the_big_bucks
