@@ -1,4 +1,4 @@
-class NssStudent
+class Developer
   attr_reader :name, :job, :experience
 
   def initialize(name, job, experience)
@@ -10,23 +10,17 @@ class NssStudent
   def bang_out_code
     "stack overflow copy and paste"
   end
+end
 
+class NssStudent < Developer
   def learn_a_lot
     "give me knowledge!!!"
   end
 end
 
-class JrDev
-  attr_reader :name, :job, :experience
-
-  def initialize(name, job, experience)
-    @name = name
-    @job = job
-    @experience = experience
-  end
-
+class JrDev < Developer
   def bang_out_code
-    "ask somebody, then stack overflow copy and paste"
+    "ask somebody, then " + super
   end
 
   def bumble_about
@@ -34,15 +28,7 @@ class JrDev
   end
 end
 
-class AccomplishedProfessional
-  attr_reader :name, :job, :experience
-
-  def initialize(name, job, experience)
-    @name = name
-    @job = job
-    @experience = experience
-  end
-
+class AccomplishedProfessional < Developer
   def bang_out_code
     "make miracles happen"
   end
