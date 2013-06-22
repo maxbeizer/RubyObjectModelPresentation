@@ -38,4 +38,10 @@ module Officeable
   def speak_in_front_of_large_groups(size)
     self.confidence_level = size / amount_of_unease
   end
+
+  def amount_of_unease
+    raise TemplateError, 'The Officeble module requires the' +
+                         'including class to define an' +
+                         'amount_of_unease method'
+  end
 end
